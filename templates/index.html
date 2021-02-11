@@ -1,0 +1,191 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--  <head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+
+<!--    <title>Samarth's text Util Website</title>-->
+<!--  </head>-->
+<!--  <body>-->
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <div class="container-fluid">-->
+<!--    <a class="navbar-brand" href="#">Samarth's text Util Website</a>-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+<!--      <ul class="navbar-nav">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" aria-current="page" href="#">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">About Us</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Contact Us</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--        <form class="d-flex">-->
+<!--      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--      <button class="btn btn-outline-success" type="submit">Search</button>-->
+<!--    </form>-->
+<!--</nav>-->
+
+<!--<div class="alert alert-success alert-dismissible fade show" role="alert">-->
+<!--  <strong>Welcome to Samarth's Text Utils !</strong> You can do anything with your texts here.-->
+<!--  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+<!--    <form action='/analyze' method='post'> {% csrf_token %}-->
+<!--        <div class="form-group">-->
+<!--  <label for="exampleFormControlTextarea1">Enter your text here and let Text Util show it's magic !</label>-->
+<!--  <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="5"></textarea>-->
+<!--</div>-->
+
+<!--    <div class="custom-control custom-switch">-->
+<!--  <input type="checkbox" class="custom-control-input" name="removepunc" id="customSwitch1">-->
+<!--  <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>-->
+<!--</div>-->
+<!--    <div class="custom-control custom-switch">-->
+<!--  <input type="checkbox" class="custom-control-input" name="fullcaps" id="customSwitch2">-->
+<!--  <label class="custom-control-label" for="customSwitch1">Upper Case </label>-->
+<!--</div>-->
+<!--    <div class="custom-control custom-switch">-->
+<!--  <input type="checkbox" class="custom-control-input" name="newlineremover" id="customSwitch3">-->
+<!--  <label class="custom-control-label" for="customSwitch1">New Line Remover</label>-->
+<!--</div>-->
+<!--    <div class="custom-control custom-switch">-->
+<!--  <input type="checkbox" class="custom-control-input" name="extraspaceremover" id="customSwitch4">-->
+<!--  <label class="custom-control-label" for="customSwitch1">Extra Space Remover</label>-->
+<!--</div>-->
+<!--    <div class="custom-control custom-switch">-->
+<!--  <input type="checkbox" class="custom-control-input" name="charcount" id="customSwitch5">-->
+<!--  <label class="custom-control-label" for="customSwitch1">Count Characters</label>-->
+<!--</div>-->
+<!--    <br>-->
+<!--    <button type="submit" class="btn btn-success">Analyze Text</button>-->
+<!--    </form>-->
+<!--</div>-->
+
+
+<!--    &lt;!&ndash; Optional JavaScript; choose one of the two! &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Option 1: Bootstrap Bundle with Popper &ndash;&gt;-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>-->
+
+<!--    &lt;!&ndash; Option 2: Separate Popper and Bootstrap JS &ndash;&gt;-->
+<!--    &lt;!&ndash;-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>-->
+<!--    &ndash;&gt;-->
+<!--  </body>-->
+<!--</html>-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Samarth's text Util Website</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Samarth's text Util Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Welcome to Samarth's Text Utils !</strong> You can do anything with your texts here.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="container">
+        <form action='/analyze' method='post'> {% csrf_token %}
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Enter your text here and let Text Util show it's magic
+                    !</label>
+                <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="removepunc" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="fullcaps" id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch1">Upper Case </label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="newlineremover" id="customSwitch3">
+                <label class="custom-control-label" for="customSwitch1">New Line Remover</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="extraspaceremover" id="customSwitch4">
+                <label class="custom-control-label" for="customSwitch1">Extra Space Remover</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="charcount" id="customSwitch5">
+                <label class="custom-control-label" for="customSwitch1">Count Characters</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success">Analyze Text</button>
+        </form>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+
+
+
